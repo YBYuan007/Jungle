@@ -18,6 +18,7 @@
 
         <td><%=  @order.email %></td>
         <td><%=  @order.total_cents %></td>
+        
           <%  @line_items.each do |item| %>
             <td><%=  item.quantity %></td>
             <td><%=  item.product.name %></td>
