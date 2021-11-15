@@ -13,8 +13,6 @@ class Admin::ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    puts "======aaaaaaaaaa"
-    puts @product.inspect
 
     if @product.save
       redirect_to [:admin, :products], notice: 'Product created!'
